@@ -1,0 +1,8 @@
+
+function bmiCalculator(weight, growth){
+
+    return Math.round(weight/(Math.pow(growth, 2)));
+}
+
+var bmi = bmiCalculator(65, 1.8); 
+console.log("Your BMI is " + bmi);
