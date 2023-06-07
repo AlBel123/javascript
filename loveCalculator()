@@ -4,4 +4,16 @@ prompt("enter the name of Your loved one: ")
 var loveScore=Math.random();
 loveScore=Math.floor(loveScore*100+1);
 
-alert("Your LoveScoret is "+ loveScore +" %!")
+if(loveScore>70){
+    alert("Your LoveScore is "+ loveScore +" %! You love each other like Romeo & Juliette!")
+    
+} 
+if(loveScore>30 && loveScore<=70){
+    alert ("Your LoveScore is "+ loveScore +" %! Could be worse... All depends on what you are ready to invest")
+} 
+if(loveScore <=30) {
+    alert("Your LoveScore is " + loveScore+" %! Flame and water...")
+        
+} 
+
+
