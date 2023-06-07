@@ -1,0 +1,16 @@
+function checkModulo(year){
+  var modulo4=year%4;
+  var modulo100=year%100;
+  var modulo400=year%400;
+  if (modulo4===0 && modulo100!==0){
+    return "Year " + year+ " is leap";
+  }
+  if (modulo100===0 && modulo400 ===0){
+    return "Year " + year+ " is leap";
+  }
+  else{
+    return "Year " + year+ " is NOT leap";
+  }
+}
+
+checkModulo(2432);
