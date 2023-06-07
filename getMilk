@@ -1,0 +1,39 @@
+function getMilk(money, bottlePrice) {   
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveLeft");
+  console.log("buy " + calcOfBottles(money,bottlePrice) + " bottles of milk ");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+    return calcChange(money,bottlePrice)
+}
+
+
+
+
+function calcOfBottles (moneyStart, bottlePrice) {
+    var numberOfBottles = Math.floor(moneyStart/bottlePrice);
+return numberOfBottles
+}
+
+function calcChange(moneyStart, bottlePrice){
+    var change=moneyStart%bottlePrice;
+    return change;
+}
+
+
+console.log("Hello, Master, Here is your USD " + getMilk(5,1.8)+ " of change and "+ calcOfBottles(5,1.8) + " bottles of milk!");
+
