@@ -1,8 +1,15 @@
-
 function bmiCalculator(weight, growth){
 
-    return Math.round(weight/(Math.pow(growth, 2)));
+var interpretation=Math.round(weight/(Math.pow(growth, 2)));
+  if(interpretation<18.6){
+    return "Your BMI is "+interpretation+", so you are underweight." 
+  }
+  if(interpretation>=18.6 && interpretation<=24.9){
+    return "Your BMI is "+interpretation+", so you have a normal weight." 
+  }
+  else{
+    return "Your BMI is "+interpretation+", so you are overweight." 
+  }
 }
 
-var bmi = bmiCalculator(65, 1.8); 
-console.log("Your BMI is " + bmi);
+bmiCalculator(65, 1.8); 
