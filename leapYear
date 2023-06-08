@@ -2,6 +2,7 @@ function checkModulo(year){
   var modulo4=year%4;
   var modulo100=year%100;
   var modulo400=year%400;
+  
   if (modulo4===0 && modulo100!==0){
     return "Year " + year+ " is leap";
   }
@@ -12,5 +13,35 @@ function checkModulo(year){
     return "Year " + year+ " is NOT leap";
   }
 }
+checkModulo(2100);
 
-checkModulo(2432);
+// ====================================================================================================
+
+
+function checkModulo(year){
+  if (year%4===0 && year%100!=0){
+    return "Year " + year+ " is leap";
+  }
+  if (year%100===0 && year%400===0){
+      return "Year " + year+ " is leap";
+    }
+  else{
+      return "Year " + year+ " is NOT leap";
+    }
+  }
+checkModulo(2100);
+
+// ============================================================================================
+
+function isLeap(year){
+  if (year%4===0){
+    if (year%100===0) {
+      if(year%400===0){
+        return year + " is Leap."
+        } else {return year + " is NOT leap."}
+    }else{return year + " is Leap."}
+  }else{return year + " is NOT leap."}
+}
+isLeap(2400);
+
+
