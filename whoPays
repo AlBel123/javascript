@@ -1,0 +1,7 @@
+var names=["Angela", "Ben", "Jenny", "Michael", "Chloe"]; //I create the aray
+
+function whoIsPaying(names){
+    var guestNumber=Math.random(); // I create the Math Random
+    guestNumber=Math.floor(guestNumber*names.length);  // Multiply it to the nmbr of guests in the array and round to the lower full integer
+    return names[guestNumber]+ " is going to pay!"; // Return the result of the function
+    }
