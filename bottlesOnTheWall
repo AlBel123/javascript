@@ -1,0 +1,19 @@
+// the function is called from Console with 
+// beer();
+
+
+var i=99;
+
+function beer(){
+    while (i>1){
+        console.log (i+" bottles of beer on the wall. "+ i +" bottles of beer." + "\n"+ "Take the one down and pass it around, " + (i-1)+ " bottles of beer on the wall. ") 
+        i--;} // This part of function uses WHILE loop and is meant for from 99 tot 2 bottles of beer
+            if (i=1){
+                console.log (i+" bottle of beer on the wall. "+ i +" bottle of beer." + "\n"+ "Take the one down and pass it around, NO bottles of beer on the wall. ")
+                i--;
+            } // This part of function is for 1 bottle on the wall
+            if (i===0){
+              console.log ("NO bottles of beer on the wall. NO bottles of beer." + "\n"+ "Go to the store and buy some more, 99 bottles of beer on the wall. ")   
+            } //This part of fucntion is for NO bottles on the wall
+            
+}
