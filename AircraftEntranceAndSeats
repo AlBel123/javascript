@@ -1,0 +1,27 @@
+// Get the passenger's name and be sure that it will be written from the capital letter
+var name=prompt ("Hello, passenger, What is your name?")
+    var capitalLetter = name.slice(0,1).toUpperCase();
+    var restOfName = name.slice(1,name.length).toLowerCase();
+    var userName=capitalLetter+restOfName;
+ 
+// Welcome the passenger and get his seat number, slicing into the row and place
+var seat = prompt("Welcome onboard, "+userName + " ! What is you seat number? ")
+var chair=seat.slice(0,1).toUpperCase();
+var row= seat.slice(1,seat.length);
+
+// Giude the pessenger with the proper entrance indication and his place location
+if (row>=1 && row<=20){
+    alert("Use the front entrance, please.")
+}
+else if (row>20){
+    alert("Use the back entrance, please.")
+}
+if (chair==="A" || chair ==="K"){
+    alert("Your seat is in the row "+ row + " . It is by the window.")
+}
+else if (chair==="C" || chair ===" D"||chair==="G" || chair ==="H"){
+    alert("Your seat is in the row "+ row + " . It is in the aisle.")
+}
+else if (chair==="B" || chair ==="F"||chair==="J"){
+    alert("Your seat is in the row "+ row + " . It is in the middle.")
+}
