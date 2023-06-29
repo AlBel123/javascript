@@ -69,5 +69,42 @@ $("h1").append("<button>I am Append</button>");
 
 $("button").remove();
 
+===Hide/Show  the element in jQuery==========================================================
+$("#button1").on("click", function(){
+    $("h1").hide();
+})
 
+$("#button2").on("click", function(){
+    $("h1").show();
+})
+
+$("#button3").on("click", function(){
+    $("h1").toggle();
+})
+
+// $("#button4").on("click",function(){
+//     $("h1").fadeOut();
+// })
+
+// $("#button5").on("click",function(){
+//     $("h1").fadeIn();
+// })
+
+$("#button4").on("click",function(){
+    $("h1").fadeToggle();
+})
+
+=== slide up/slideDown==========================================================
+
+// $("#button4").on("click",function(){
+//     $("h1").slideUp();
+// })
+
+$("#button5").on("click",function(){
+    $("h1").slideDown();
+})
+
+$("#button4").on("click",function(){
+    $("h1").slideToggle();
+})
 
