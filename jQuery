@@ -82,13 +82,6 @@ $("#button3").on("click", function(){
     $("h1").toggle();
 })
 
-===add Animation in jQuery===================================================================
-
-$("button").on("click",function(){
-    $("h1").animate({opacity: 0.2})
-})
-
-
 
 // $("#button4").on("click",function(){
 //     $("h1").fadeOut();
@@ -114,5 +107,16 @@ $("#button5").on("click",function(){
 
 $("#button4").on("click",function(){
     $("h1").slideToggle();
+})
+
+
+===add Animation in jQuery===================================================================
+
+$("button").on("click",function(){
+    $("h1").animate({opacity: 0.2})
+})
+
+$("button").on("click",function(){
+    $("h1").slideUp().slideDown().animate({opacity: 0.2, margin:20})
 })
 
