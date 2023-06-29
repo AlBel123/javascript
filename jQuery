@@ -33,14 +33,41 @@ $("button").click(function(){
     $("h1").css("color", "green");
 })
 
-===show what the Keyboard presses on the display==============================================================================
+===show what the Keyboard presses on the display===============================
 
 $(document).keypress(function(event){
     $("h1").text(event.key);
-})
 
-===show what the Keyboard presses in the Console.log=============================================================================
+===show what the Keyboard presses in the Console.log============================
 
 $("input").keypress(function(event){
     console.log(event.key);
 })
+
+=== addEventListener with ON ==========================================================
+
+$("h1").on("mouseover", function(){
+    $("h1").css("color", "purple");
+})
+
+$("h1").on("mouseout", function(){
+    $("h1").css("color", "yellow");
+})
+})
+
+===add Elements in jQuery===============================================================
+
+$("h1").before("<button>I am Before</button>");
+
+$("h1").after("<button>I am After</button>");
+
+$("h1").prepend("<button>I am Prepend</button>");
+
+$("h1").append("<button>I am Append</button>");
+
+===remove elements in jQuery============================================================
+
+$("button").remove();
+
+
+
